@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: lightgray; */
+  position: relative;
+}
+
+.container {
+  width: 60%;
+  max-width: 600px;
+  min-width: 300px;
+  padding: 60px 40px;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 2px solid lightgray;
+}
+
+.form-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.label-container {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.label-container label {
+  font-size: 18px;
+}
+
+.error-msg {
+  background-color: grey;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  display: none;
+  text-align: end;
+  margin: 10px 0px;
+}
+.err-msg {
+  color: rgb(182, 18, 18);
+}
+
+.msg-text {
+  display: none;
+
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+}
+.msg {
+  text-align: center;
+  background-color: grey;
+}
+
+.msg-container {
+  text-align: end;
+}
+
+.gross-input {
+  display: none;
+}
+.input-container {
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 90%;
+}
+
+select {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+::placeholder {
+  color: lightgray;
+  font-size: 14px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid grey;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+button {
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  background-color: rgb(88, 95, 204);
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result-container {
+  background-color: #fff;
+  padding: 100px;
+  position: absolute;
+  z-index: 1;
+  height: 460px;
+  width: 680px;
+  border: 2px solid lightgray;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
+.result-container p {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.btn-close {
+  width: 100px;
+}
